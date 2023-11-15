@@ -1,5 +1,6 @@
-import { useState, useEffect, useRef } from 'react';
-import { GridItem } from "../GridItem/GridItem";
+import {useState, useEffect, useRef} from "react"
+import {GridItem} from "../GridItem/GridItem"
+import "./GameBoard.css"
 
 export default function OrderHistoryPage() {
     // 0 - empty | 1 - first player | 2 - second player
@@ -11,18 +12,9 @@ export default function OrderHistoryPage() {
     
     return (
         <main>
-            <h1>Test current player is: {currentPlayer}</h1>
-            { GridItems }
-        <div className="Gameboard">
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
-            <GridItem />
+            <div className="Gameboard">
+                <h1>Test current player is: {currentPlayer}</h1>
+                { GridItems }
             </div>
         </main>
     )
