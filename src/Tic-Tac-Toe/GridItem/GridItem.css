@@ -1,7 +1,7 @@
 .gridItem {
 	width: 100%;
 	justify-content: center;
-    -webkit-text-stroke: 3px #444444;
+	-webkit-text-stroke: 3px #444444;
 }
 
 button {
@@ -29,9 +29,9 @@ button:hover {
 }
 
 .playerOne {
-    color: var(--ORANGE);
+	color: var(--ORANGE);
 }
 
 .playerTwo {
-    color: var(--BLUE);
+	color: var(--BLUE);
 }

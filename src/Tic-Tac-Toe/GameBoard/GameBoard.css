@@ -1,12 +1,12 @@
 .GameBoard {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    height: 60rem;
-    width: 60rem;
-    margin: 0 auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+	height: 60rem;
+	width: 60rem;
+	margin: 0 auto;
 }
 
 h2 {
-    margin-bottom: 3rem;
+	margin-bottom: 3rem;
 }
