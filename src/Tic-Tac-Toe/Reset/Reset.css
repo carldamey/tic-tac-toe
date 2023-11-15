@@ -1,6 +1,15 @@
 .resetButton {
-    height: 10rem;
-    font-size: 5rem;
-    margin-top: 5rem;
-    
+	height: 5rem;
+	font-size: 4rem;
+	padding: 0px;
+	text-align: center;
+	width: 57rem;
+	margin-top: 1rem;
+}
+
+.resetButton:active {
+	border-radius: 31px;
+	background: #a4a4a4;
+	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #999999;
+	color: #c6c6c6;
 }

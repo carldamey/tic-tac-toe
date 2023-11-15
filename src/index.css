@@ -35,8 +35,8 @@ body {
   sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* background: linear-gradient(145deg,#454545, #d4d4d4); */
-  background-color: darkgray;
+  background: linear-gradient(145deg,#454545, #111111);
+  /* background-color: #444444; */
   background-attachment: fixed;
   padding: 2vmin;
   height: 100vh;
