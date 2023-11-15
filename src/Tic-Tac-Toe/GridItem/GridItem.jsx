@@ -19,9 +19,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
 
     
     return (
-        <div>
         <div className="GridItem">
-            <h1>{player.current}</h1>
             <h2>{gridItemLocation}</h2>
             <h2>{gridItemState}</h2>
             <button onClick={handleClick}>Click here</button>
