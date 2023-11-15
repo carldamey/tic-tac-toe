@@ -2,7 +2,7 @@ import {useState, useEffect, useRef} from "react"
 import {GridItem} from "../GridItem/GridItem";
 import "./GameBoard.css"
 
-export default function GameBoard() {
+export default function GameBoard(  ) {
 	// 0 - empty | 1 - first player | 2 - second player
 	const [currentPlayer, setCurrentPlayer] = useState(1)
 	const [boardState, setBoardState] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
