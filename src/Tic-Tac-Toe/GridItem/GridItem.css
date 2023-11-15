@@ -1,14 +1,13 @@
 .gridItem {
 	width: 100%;
 	justify-content: center;
-
-    -webkit-text-stroke: 3px #656565;
+    -webkit-text-stroke: 3px #444444;
 }
 
 button {
 	border-radius: 31px;
 	background: #b5b5b5;
-	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #ffffff;
+	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #999999;
 	width: 17rem;
 	height: 17rem;
 	margin: 0;
@@ -19,14 +18,14 @@ button {
 button:hover {
 	border-radius: 31px;
 	background: linear-gradient(145deg, #929292, #c2c2c2);
-	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #ffffff;
+	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #999999;
 }
 
 .button-active,
 .button-active:hover {
 	border-radius: 31px;
 	background: #a4a4a4;
-	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #ffffff;
+	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #999999;
 }
 
 .playerOne {
