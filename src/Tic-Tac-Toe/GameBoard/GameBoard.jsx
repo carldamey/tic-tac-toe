@@ -19,6 +19,7 @@ export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer,
 			gridItemState={item}
 			setGridItemState={setBoardState}
             winner={winner}
+            gameOver={gameOver}
 		/>
 	))
     
