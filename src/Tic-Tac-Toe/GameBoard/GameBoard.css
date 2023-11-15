@@ -6,9 +6,9 @@
 .GameBoard {
     background-color: rgb(51, 255, 0);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     justify-items: center;
-    height: 50rem;
-    width: 50rem;
+    height: 60rem;
+    width: 60rem;
     margin: 0 auto;
 }

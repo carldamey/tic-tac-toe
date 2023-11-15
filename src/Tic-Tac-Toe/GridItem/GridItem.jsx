@@ -5,6 +5,9 @@ import "./GridItem.css"
 export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState }) {
     const player = useRef();
 
+    const [isActive, setActive] = useState("false");
+
+
     function handleClick() {
         if (gridItemState === 0) {
             const newBoardState = boardState;
@@ -15,6 +18,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
             console.log('the new board state: ', newBoardState)
             setGridItemState(newBoardState);
             setCurrentPlayer(player.current)
+            setActive(!isActive);
         }
     }
 
@@ -26,7 +30,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
     
     return (
         <div className="gridItem">
-            <button className="active" onClick={handleClick}>{icon}</button>
+            <button onClick={handleClick} className={`button-${isActive ? "not-active" : "active"}`}>{icon}</button>
         </div>
     )
 }
