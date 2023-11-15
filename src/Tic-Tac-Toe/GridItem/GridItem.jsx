@@ -7,7 +7,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
     const buttonColour = useRef(null);
     const [isActive, setActive] = useState("false");
     const [classNameClass, setClassNameClass] = useState('')
-    let classs = useRef(['button-not-active', 'button-active', '']);
+    const classs = useRef(['button-not-active', 'button-active', '']);
 
     useEffect(function() {
         setClassNameClass(classs.current[0])
