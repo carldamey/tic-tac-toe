@@ -15,7 +15,6 @@ app.use(favicon(path.join(__dirname, 'build', 'favicon.ico')))
 app.use(express.static(path.join(__dirname, 'build')))
 // middleware to verify token and assign user object of payload to req.user
 // mount before routes
-app.use(require('./config/checkToken'))
 
 const port = process.env.PORT || 3001
 
