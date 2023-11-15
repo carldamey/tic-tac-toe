@@ -3,10 +3,10 @@ import {GridItem} from "../GridItem/GridItem";
 import "./GameBoard.css"
 import * as logic from "../../gameLogic";
 
-export default function GameBoard() {
+export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer, setBoardState} ) {
 	// 0 - empty | 1 - first player | 2 - second player
-	const [currentPlayer, setCurrentPlayer] = useState(1)
-	const [boardState, setBoardState] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
+	// const [currentPlayer, setCurrentPlayer] = useState(1)
+	// const [boardState, setBoardState] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
     const [declareResult, setDeclareResult] = useState('')
     const [winner, setWinner] = useState(null)
 	const GridItems = boardState.map((item, idx) => (
