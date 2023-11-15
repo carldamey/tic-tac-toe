@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from "react"
-import {GridItem} from "../GridItem/GridItem"
+import {GridItem} from "../GridItem/GridItem";
 import "./GameBoard.css"
 
 export default function OrderHistoryPage() {
