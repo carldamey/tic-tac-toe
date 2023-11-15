@@ -1,7 +1,6 @@
 
 import { useState, useRef, useEffect } from "react"
 import "./GridItem.css"
-import { useFetcher } from "react-router-dom";
 
 export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState }) {
     const player = useRef();
@@ -27,10 +26,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
     
     return (
         <div className="GridItem">
-            <h2>{gridItemLocation}</h2>
-            <h2>{icon}</h2>
-            <button onClick={handleClick}>Click here</button>
-            {/* {some Function} */}
+            <button onClick={handleClick}>{icon}</button>
         </div>
     )
 }
