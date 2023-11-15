@@ -3,10 +3,9 @@
     color: blue;
 }
 
-GameBoard {
-    height: 50vmin;
-    width: 20vmin;
+.GameBoard {
     background-color: aqua;
     display: grid;
-    grid-area: span 3;
+    grid-template-columns: 1fr 1fr 1fr;
+    
 }
