@@ -14,7 +14,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
             player.current = currentPlayer;
             console.log('current player: ', player.current, ' and item location is: ', gridItemLocation)
             newBoardState[gridItemLocation] = player.current;
-            buttonColour.current = player.current;
+            buttonColour.current = player.current === 1 ? 'playerOne' : 'playerTwo';
             player.current = currentPlayer !== 1 ? 1 : 2;
             console.log('the new board state: ', newBoardState)
             setGridItemState(newBoardState);
