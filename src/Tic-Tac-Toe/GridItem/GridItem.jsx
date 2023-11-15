@@ -25,8 +25,8 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
     }
     
     return (
-        <div className="GridItem">
-            <button onClick={handleClick}>{icon}</button>
+        <div className="gridItem">
+            <button className="active" onClick={handleClick}>{icon}</button>
         </div>
     )
 }
