@@ -1,4 +1,5 @@
-import { GridItem } from "../GridItem/GridItem";
+import GridItem from "../GridItem/GridItem";
+import "./GameBoard"
 
 export default function OrderHistoryPage() {
 
