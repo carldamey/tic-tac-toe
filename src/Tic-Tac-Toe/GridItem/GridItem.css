@@ -1,6 +1,8 @@
 .gridItem {
 	width: 100%;
 	justify-content: center;
+
+    -webkit-text-stroke: 3px #656565;
 }
 
 button {
@@ -27,10 +29,10 @@ button:hover {
 	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #ffffff;
 }
 
-.player1 {
+.playerOne {
     color: var(--ORANGE);
 }
 
-.player2 {
+.playerTwo {
     color: var(--BLUE);
 }
