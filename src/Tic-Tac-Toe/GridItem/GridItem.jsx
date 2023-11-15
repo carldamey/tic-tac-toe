@@ -1,7 +1,6 @@
 
 import { useState, useRef, useEffect } from "react"
 import "./GridItem.css"
-import { useFetcher } from "react-router-dom";
 
 export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState }) {
     const player = useRef();

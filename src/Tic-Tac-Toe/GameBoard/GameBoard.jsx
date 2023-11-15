@@ -20,7 +20,7 @@ export default function OrderHistoryPage() {
 
 	return (
 		<main>
-			<h1>Test current player is: {currentPlayer}</h1>
+			<h1>The current player is: {currentPlayer}</h1>
 			<div className="GameBoard">{GridItems}</div>
 		</main>
 	)
