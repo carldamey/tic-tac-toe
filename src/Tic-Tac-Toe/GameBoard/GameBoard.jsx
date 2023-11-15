@@ -11,7 +11,7 @@ export default function OrderHistoryPage() {
     
     return (
         <main>
-            <h1>Test</h1>
+            <h1>Test current player is: {currentPlayer}</h1>
             { GridItems }
         <div className="Gameboard">
             <GridItem />
