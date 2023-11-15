@@ -26,3 +26,11 @@ button:hover {
 	background: #a4a4a4;
 	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #ffffff;
 }
+
+.player1 {
+    color: var(--ORANGE);
+}
+
+.player2 {
+    color: var(--BLUE);
+}

@@ -7,5 +7,7 @@
 	text-align: center;
 }
 
-:root {--ORANGE: #E69D37;
+:root {
+	--ORANGE: #e69d37;
+	--BLUE: #37a1e6;
 }
