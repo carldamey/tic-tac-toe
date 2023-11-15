@@ -1,22 +1,36 @@
 
 import { useState, useRef, useEffect } from "react"
 import "./GridItem.css"
+import { useFetcher } from "react-router-dom";
 
-export function GridItem({ gridItemLocation, gridItemState, setGridItemState, click }) {
-    const [itemState, setItemState] = useState(gridItemState)
-    const player = useRef(null)
+export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState }) {
+    const player = useRef();
 
-    useEffect(function () {
-        player.current = "None"
-        if (itemState !== 0) player.current = player.current===1 ? "X" : "O";
-    }, [itemState])
+    function handleClick() {
+        if (gridItemState === 0) {
+            const newBoardState = boardState;
+            player.current = currentPlayer;
+            console.log('current player: ', player.current, ' and item location is: ', gridItemLocation)
+            newBoardState[gridItemLocation] = player.current;
+            player.current = currentPlayer !== 1 ? 1 : 2;
+            console.log('the new board state: ', newBoardState)
+            setGridItemState(newBoardState);
+            setCurrentPlayer(player.current)
+        }
+    }
 
+    let icon = '';
+
+    if (gridItemState !== 0) {
+        icon = gridItemState === 1 ? 'X' : 'O';
+    }
+    
     return (
         <div className="GridItem">
-            <h1>{player.current}</h1>
             <h2>{gridItemLocation}</h2>
-            <h2>{gridItemState}</h2>
-            <button onClick={click}>Click here</button>
+            <h2>{icon}</h2>
+            <button onClick={handleClick}>Click here</button>
+            {/* {some Function} */}
         </div>
     )
 }
