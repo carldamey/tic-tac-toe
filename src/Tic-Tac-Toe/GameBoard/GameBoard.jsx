@@ -8,7 +8,7 @@ export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer,
 	// const [currentPlayer, setCurrentPlayer] = useState(1)
 	// const [boardState, setBoardState] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
     const [declareResult, setDeclareResult] = useState('')
-    let winner = null;
+    const [winner, setWinner] = useState(null)
 	const GridItems = boardState.map((item, idx) => (
 		<GridItem
 			setCurrentPlayer={setCurrentPlayer}
@@ -18,12 +18,13 @@ export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer,
 			gridItemLocation={idx}
 			gridItemState={item}
 			setGridItemState={setBoardState}
+            winner={winner}
 		/>
 	))
     
     useEffect(function() {
         console.log('board state changed!')
-        winner = logic.checkWin(boardState) !== 0 ? `Winner: Player ${logic.checkWin(boardState)}!` : null;
+        setWinner(logic.checkWin(boardState) !== 0 ? `Winner: Player ${logic.checkWin(boardState)}!` : null);
         setDeclareResult(winner)
         if (!winner && logic.checkTie(boardState)) setDeclareResult('Tie!');
         console.log(winner)
