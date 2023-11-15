@@ -4,8 +4,11 @@
 }
 
 .GameBoard {
-    background-color: aqua;
+    background-color: rgb(51, 255, 0);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
+    justify-items: center;
+    height: 50rem;
+    width: 50rem;
+    margin: 0 auto;
 }
