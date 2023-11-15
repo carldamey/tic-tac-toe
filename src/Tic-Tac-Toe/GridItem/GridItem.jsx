@@ -1,7 +1,9 @@
+import "./GridItem.css"
+
 export default function GridItem() {
     return (
-        <div>
-            {/* {some Function} */}
+        <div className="GridItem">
+            Grid item
         </div>
     )
 }
