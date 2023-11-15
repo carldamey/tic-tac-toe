@@ -2,11 +2,17 @@
 import { useState, useRef, useEffect } from "react"
 import "./GridItem.css"
 
-export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState, winner }) {
+export function GridItem({ gridItemLocation, gridItemState, setGridItemState, setCurrentPlayer, currentPlayer, boardState, winner, gameOver }) {
     const player = useRef();
     const buttonColour = useRef(null);
     const [isActive, setActive] = useState("false");
+    const [classNameClass, setClassNameClass] = useState('')
+    const classs = useRef(['button-not-active', 'button-active', '']);
 
+    useEffect(function() {
+        setClassNameClass(classs.current[0])
+    }, [gameOver])
+    // `button-not-active` `button-active` ''
 
     function handleClick() {
         if (gridItemState === 0 && !winner) {
@@ -19,6 +25,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
             console.log('the new board state: ', newBoardState)
             setGridItemState(newBoardState);
             setCurrentPlayer(player.current);
+            setClassNameClass(classs.current[1]);
             setActive(!isActive);
         }
     }
@@ -31,7 +38,7 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, se
     
     return (
         <div className="gridItem">
-            <button onClick={handleClick} className={`button-${isActive ? "not-active" : "active"} ${buttonColour.current}`}>{icon}</button>
+            <button onClick={handleClick} className={`${classNameClass} ${buttonColour.current}`}>{icon}</button>
         </div>
     )
 }

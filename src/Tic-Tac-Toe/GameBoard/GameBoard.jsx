@@ -19,22 +19,26 @@ export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer,
 			gridItemState={item}
 			setGridItemState={setBoardState}
             winner={winner}
+            gameOver={gameOver}
 		/>
 	))
     
+
     useEffect(function() {
         console.log('board state changed!')
-        setWinner(logic.checkWin(boardState) !== 0 ? `Winner: Player ${logic.checkWin(boardState)}!` : null);
+        setWinner(logic.checkWin(boardState) !== 0 ? `${logic.checkWin(boardState) === 1 ? 'X wins!' : 'O wins!'}` : null);
         setDeclareResult(winner)
         if (!winner && logic.checkTie(boardState)) setDeclareResult('Tie!');
         console.log(winner)
-				if (winner) setGameOver(true)
+        if (winner) {
+            setGameOver(true)      
+        }
     })
 
 	return (
 		<main>
-			<h1>The current player is: {currentPlayer}</h1>
-            <h2>{declareResult}</h2>
+            <h2>&nbsp;{declareResult}&nbsp;</h2>
+            <h1>{currentPlayer === 1 ? `X's Turn` : `O's Turn`}</h1>
 			<div className="GameBoard">{GridItems}</div>
 		</main>
 	)
