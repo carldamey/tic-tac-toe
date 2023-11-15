@@ -1,4 +1,4 @@
-export default function NewOrderPage() {
+export default function Messages() {
     return (
         <h1>Game Messages</h1>
     )
