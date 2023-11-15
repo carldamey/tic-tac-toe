@@ -1,3 +1,4 @@
+
 import { useState, useRef, useEffect } from "react"
 
 export function GridItem({ gridItemLocation, gridItemState, setGridItemState, click }) {
@@ -16,6 +17,12 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, cl
             <h2>{gridItemState}</h2>
             <button onClick={click}>Click here</button>
             {/* {some Function} */}
+import "./GridItem.css"
+
+export default function GridItem() {
+    return (
+        <div className="GridItem">
+            Grid item
         </div>
     )
 }

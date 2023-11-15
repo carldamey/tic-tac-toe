@@ -18,6 +18,16 @@ export default function OrderHistoryPage() {
         <main>
             <h1>Test</h1>
             { GridItems }
+        <main className="Gameboard">
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
+            <GridItem />
         </main>
     )
 }
