@@ -4,7 +4,7 @@ import "./GameBoard"
 export default function OrderHistoryPage() {
 
     return (
-        <main>
+        <main className="Gameboard">
             <GridItem />
             <GridItem />
             <GridItem />
