@@ -4,9 +4,9 @@
 }
 
 button {
-	border-radius: 32px;
+	border-radius: 31px;
 	background: #b5b5b5;
-	box-shadow: 10px 10px 20px #989898, -10px -10px 20px #d2d2d2;
+	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #ffffff;
 	width: 17rem;
 	height: 17rem;
 	margin: 0;
@@ -15,15 +15,14 @@ button {
 }
 
 button:hover {
-	border-radius: 32px;
-	background: linear-gradient(145deg, #a3a3a3, #c2c2c2);
-	box-shadow: 10px 10px 20px #989898, -10px -10px 20px #d2d2d2;
+	border-radius: 31px;
+	background: linear-gradient(145deg, #929292, #c2c2c2);
+	box-shadow: 8px 8px 16px #656565, -8px -8px 16px #ffffff;
 }
 
 .button-active,
 .button-active:hover {
-	background-color: red;
-	border-radius: 32px;
-	background: #b5b5b5;
-	box-shadow: inset 10px 10px 20px #989898, inset -10px -10px 20px #d2d2d2;
+	border-radius: 31px;
+	background: #a4a4a4;
+	box-shadow: inset 8px 8px 16px #656565, inset -8px -8px 16px #ffffff;
 }
