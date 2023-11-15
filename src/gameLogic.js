@@ -14,8 +14,8 @@ function checkWin(boardState) {
     if (b[1] === b[4] && b[4] === b[7]) return b[1];
     if (b[2] === b[5] && b[5] === b[8]) return b[2];
     // check diagonals
-    if (b[0] === b[4] && b[4] === b[8]) return b[4];
-    if (b[2] === b[4] && b[4] === b[6]) return b[4];
+    if (b[0] === b[4] && b[4] === b[8]) return b[0];
+    if (b[2] === b[4] && b[4] === b[6]) return b[2];
 }
 
 function checkTie(boardState) {
