@@ -16,10 +16,15 @@ function checkWin(boardState) {
     // check diagonals
     if (b[0] === b[4] && b[4] === b[8]) return b[0];
     if (b[2] === b[4] && b[4] === b[6]) return b[2];
+    return 0;
 }
 
 function checkTie(boardState) {
     const b = boardState;
-    if (b.includes(0)) return;
-    else return null;
+    if (b.includes(0)) {
+        return;
+    }
+    else {
+        return null;
+    }
 }
