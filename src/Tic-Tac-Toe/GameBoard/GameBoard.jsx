@@ -18,7 +18,7 @@ export default function OrderHistoryPage() {
         <main>
             <h1>Test</h1>
             { GridItems }
-        <main className="Gameboard">
+        <div className="Gameboard">
             <GridItem />
             <GridItem />
             <GridItem />
@@ -28,6 +28,7 @@ export default function OrderHistoryPage() {
             <GridItem />
             <GridItem />
             <GridItem />
+            </div>
         </main>
     )
 }

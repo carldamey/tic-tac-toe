@@ -1,5 +1,6 @@
 
 import { useState, useRef, useEffect } from "react"
+import "./GridItem.css"
 
 export function GridItem({ gridItemLocation, gridItemState, setGridItemState, click }) {
     const [itemState, setItemState] = useState(gridItemState)
@@ -11,18 +12,11 @@ export function GridItem({ gridItemLocation, gridItemState, setGridItemState, cl
     }, [itemState])
 
     return (
-        <div>
+        <div className="GridItem">
             <h1>{player.current}</h1>
             <h2>{gridItemLocation}</h2>
             <h2>{gridItemState}</h2>
             <button onClick={click}>Click here</button>
-            {/* {some Function} */}
-import "./GridItem.css"
-
-export default function GridItem() {
-    return (
-        <div className="GridItem">
-            Grid item
         </div>
     )
 }
