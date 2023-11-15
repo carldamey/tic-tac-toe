@@ -1,5 +1,23 @@
 .GridItem {
-    background-color: blueviolet;
-    width: 5vmin;
-    height: 10vmin;
+	background-color: blueviolet;
+	width: 5vmin;
+	height: 10vmin;
 }
+
+button {
+	border-radius: 32px;
+	background: #b5b5b5;
+	box-shadow: 10px 10px 20px #989898, -10px -10px 20px #d2d2d2;
+}
+
+button:hover {
+	border-radius: 32px;
+	background: linear-gradient(145deg, #a3a3a3, #c2c2c2);
+	box-shadow: 10px 10px 20px #989898, -10px -10px 20px #d2d2d2;
+}
+
+/* clicked
+border-radius: 32px;
+background: #b5b5b5;
+box-shadow: inset 10px 10px 20px #989898,
+            inset -10px -10px 20px #d2d2d2; */
