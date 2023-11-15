@@ -3,7 +3,7 @@ import {GridItem} from "../GridItem/GridItem";
 import "./GameBoard.css"
 import * as logic from "../../gameLogic";
 
-export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer, setBoardState} ) {
+export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer, setBoardState, gameOver, setGameOver} ) {
 	// 0 - empty | 1 - first player | 2 - second player
 	// const [currentPlayer, setCurrentPlayer] = useState(1)
 	// const [boardState, setBoardState] = useState([0, 0, 0, 0, 0, 0, 0, 0, 0])
@@ -28,6 +28,7 @@ export default function GameBoard( {currentPlayer, boardState, setCurrentPlayer,
         setDeclareResult(winner)
         if (!winner && logic.checkTie(boardState)) setDeclareResult('Tie!');
         console.log(winner)
+				if (winner) setGameOver(true)
     })
 
 	return (
