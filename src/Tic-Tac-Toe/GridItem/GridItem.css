@@ -1,13 +1,13 @@
 .GridItem {
 	background-color: blueviolet;
-	width: 5vmin;
-	height: 10vmin;
+    size: 100%;
 }
 
 button {
 	border-radius: 32px;
 	background: #b5b5b5;
 	box-shadow: 10px 10px 20px #989898, -10px -10px 20px #d2d2d2;
+    size: 100%;
 }
 
 button:hover {
